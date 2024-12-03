@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  margin: 25px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f3e8; /* Cream background */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  background-color: #8b5a2b; /* Brown header */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+.image-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3d9c9; /* Light cream for image section */
+}
+
+.uploaded-image {
+  max-width: 100%;
+  max-height: 300px;
+  margin-top: 20px;
+}
+
+.translation-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #d6b89c; /* Light brown for translation section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace; /* Typewriter font */
+  white-space: pre-wrap; /* Preserve whitespace and line breaks */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.translation-container h2 {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 25%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #8b5a2b; /* Brown border */
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #8b5a2b; /* Brown button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #7a4b2a; /* Darker brown on hover */
+}
+
+button:disabled {
+  background-color: #bdaf9a; /* Grayish brown when disabled */
+  cursor: not-allowed;
+}
